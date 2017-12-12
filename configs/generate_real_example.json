@@ -1,0 +1,29 @@
+{
+
+    # This is a list of all 3D models to render (support more than 1)
+    "models": [
+    {
+      "name": "model_name",
+      "model_path": "path/to/geometry.ply",
+      "ambiant_occlusion_model": "path/to/ao.ply,
+      "object_width": "250" # cropping width of the model (mm)
+    }
+    ],
+
+  "camera_path": "/path/to/camera.json",
+  "shader_path": "path/to/shader",
+  "output_path": "path/to/output",
+  "real_path": "path/to/raw/captures",
+  "preload": "False",       # True or False : if True will append to data already contained in output path else overwrite
+  "save_type": "numpy",     # save asnumpy or png, trade off between load speed and space
+  "sample_quantity": "10",  # quantity of sample per real images
+  "image_size": "150",      # pixel width/height of the samples
+  "detector_layout_path": "deeptracking/detector/aruco_layout.xml", # path to aruco pattern
+  "saturation_threshold" : "190",  # will remove white pixels above this saturation value
+  "translation_range": "0.02",  # max translation (m)
+  "rotation_range": "10",       # max rotation (degree)
+  "sphere_min_radius": "0.4",   # min distance from camera
+  "sphere_max_radius": "1.5"    # max distance from camera
+}
+
+

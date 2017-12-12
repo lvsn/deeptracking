@@ -1,0 +1,29 @@
+#version 130
+
+in vec3 position;
+in vec3 color;
+in vec3 normal;
+in vec3 ambiant_occlusion;
+in vec2 texcoords;
+out vec3 fragmentColor;
+
+out vec3 Normal;
+out vec3 Ambiant_Occlusion;
+out vec3 FragPos;
+out vec2 TexCoords;
+out vec3 viewPos;
+
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 proj;
+
+void main()
+{
+    fragmentColor = color;
+    gl_Position = proj * view * vec4(position, 1.0);
+	FragPos = vec3(model * vec4(position, 1.0f));
+	viewPos = vec3(view);
+	Normal = normal;
+	TexCoords = texcoords;
+	Ambiant_Occlusion = ambiant_occlusion;
+}

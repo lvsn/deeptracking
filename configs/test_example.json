@@ -1,0 +1,29 @@
+{
+"models": [
+
+    {
+      "name": "model_name",
+      "model_path": "path/to/geometry.ply",
+      "ambiant_occlusion_model": "path/to/ao.ply,
+      "object_width": "250" # cropping width of the model (mm)
+    }
+    ],
+  "model_file": "path/to/lua/code.lua",  #Relative path!! else lua will crash
+  "output_path": "path/to/output",
+  "shader_path": "deeptracking/data/shaders",
+  "model_path": "path/to/trained/model",
+  "video_path": "path/to/sequence/folder",
+  "reset_frequency": "0",       # will reset to groundtruth every x frames
+  "closed_loop_iteration": "3", # number of prediction between two frame
+  "save_frames": "False",       # save all frames in output folder
+  "save_video": "True",         # save video in output folder
+  "show_axis": "False",         # show axis instead of 3D model overlay
+  "show_depth": "False",        # show depth channel
+  "show_zoom": "True",          # show network input
+
+  "use_sensor": "True",
+  "COMMENT": "Sensor only",
+  "detector_layout_path": "path/to/aruco/layout/aruco_layout_tiny.xml",
+  "sensor_camera_path": "path/to/camera.json",
+  "offset": "file"
+}

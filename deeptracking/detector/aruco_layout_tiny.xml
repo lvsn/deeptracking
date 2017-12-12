@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opencv_storage>
+	<aruco_bc_nmarkers>2</aruco_bc_nmarkers>
+	<aruco_bc_mInfoType>1</aruco_bc_mInfoType>
+	<aruco_bc_markers>
+		<_>
+			<id>985</id>
+			<corners>
+				<_>-0.101 -0.259 0.0</_>
+				<_>0.0 -0.259 0.0</_>
+				<_>0.0 -0.159 0.0</_>
+				<_>-0.101 -0.159 0.0</_>
+			</corners>
+		</_>
+		<_>
+			<id>908</id>
+			<corners>
+				<_>-0.197 -0.101 0.0</_>
+				<_>-0.096 -0.101 0.0</_>
+				<_>-0.096 0.0 0.0</_>
+				<_>-0.197 0.0 0.0</_>
+			</corners>
+		</_>
+	</aruco_bc_markers>
+</opencv_storage>
