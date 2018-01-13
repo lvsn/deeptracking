@@ -1,12 +1,13 @@
 {
 
     # This is a list of all 3D models to render (support more than 1)
+    # [WARNING] : remove all the # comments to parse the json correctly!
     "models": [
 
     {
       "name": "model_name",
       "model_path": "path/to/geometry.ply",
-      "ambiant_occlusion_model": "path/to/ao.ply,
+      "ambiant_occlusion_model": "path/to/ao.ply",
       "object_width": "250" # cropping width of the model (mm)
     }
     ],
