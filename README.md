@@ -21,6 +21,7 @@ python generate_synthetic_data.py config_file.json
 
 #### dependencies
 - cv2
+- numpy (tested with 1.13.3)
 - tqdm
 - pyOpenGL
 - glfw
@@ -37,6 +38,7 @@ python generate_real_data.py config_file.json
 
 #### dependencies
 - cv2
+- numpy (tested with 1.13.3)
 - tqdm
 - pyOpenGL
 - glfw
@@ -53,7 +55,7 @@ python train.py config_file.json
 
 #### dependencies
 - Hugh Perkins's [pytorch](https://github.com/hughperkins/pytorch)
-- scipy, skimage, numpy
+- scipy, skimage, numpy (tested with 1.13.3)
 - tqdm
 - numpngw
 - slackclient (could be removed)
@@ -76,6 +78,7 @@ python test_sequence.py config_file.json
 
 #### dependencies
 - cv2
+- numpy (tested with 1.13.3)
 - Hugh Perkins's [pytorch](https://github.com/hughperkins/pytorch)
 - pyOpenGL
 - glfw
