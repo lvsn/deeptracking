@@ -2,15 +2,14 @@
 
 Torch + python implementation of [Deep 6-DOF Tracking](https://arxiv.org/abs/1703.09771)
 
-Note that a docker file is available
 
 The code to parse a ply file is not provided, this framework needs an implementation of [plyparser.py](https://github.com/lvsn/deeptracking/blob/develop/deeptracking/utils/plyparser.py)
 
 
-TODO: update with the more recent pytorch framework...
-
-The datasets and 3D models from the paper can be found [Here](http://vision.gel.ulaval.ca/~jflalonde/projects/deepTracking/index.html).
-
+## Useful links
+- [Paper](https://arxiv.org/abs/1703.09771)
+- [Dataset and project page](http://vision.gel.ulaval.ca/~jflalonde/projects/deepTracking/index.html)
+- [Python code to download/load the data](https://github.com/lvsn/deeptrack_dataset)
 
 ## Generating data
 ### Generating synthetic data
