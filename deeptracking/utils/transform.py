@@ -99,14 +99,14 @@ class Transform:
 
     def to_parameters(self, isDegree=False, isQuaternion=False):
         x, y, z = self.matrix[0:3, 3]
-        a, b, c = ea.mat2euler(self.matrix[0:3, 0:3])
+        rx, ry, rz = ea.mat2euler(self.matrix[0:3, 0:3])
         if isDegree:
-            a = math.degrees(a)
-            b = math.degrees(b)
-            c = math.degrees(c)
-        ret = [x, y, z, a, b, c]
+            rx = math.degrees(rx)
+            ry = math.degrees(ry)
+            rz = math.degrees(rz)
+        ret = [x, y, z, rx, ry, rz]
         if isQuaternion:
-            qx, qy, qz, qw = ea.euler2quat(a, b, c)
+            qx, qy, qz, qw = ea.euler2quat(x=rx, y=ry, z=rz)
             ret = [x, y, z, qx, qy, qz, qw]
         return np.array(ret)
 
