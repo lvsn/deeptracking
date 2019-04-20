@@ -106,7 +106,7 @@ class Transform:
             rz = math.degrees(rz)
         ret = [x, y, z, rx, ry, rz]
         if isQuaternion:
-            qx, qy, qz, qw = ea.euler2quat(x=rx, y=ry, z=rz)
+            qw, qx, qy, qz = ea.euler2quat(x=rx, y=ry, z=rz)
             ret = [x, y, z, qx, qy, qz, qw]
         return np.array(ret)
 
